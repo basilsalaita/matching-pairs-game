@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang ="en">
+ <head>
+    <meta charset = "UTF-8">
+    <title>Matching Pairs Game</title>
+    <link rel="stylesheet" href="ba17.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Matching Pairs Game</h1>
+        <p>Select a board size to start the game.</p>
+        <div class="board-selection">
+            <h3>Select a board size</h3>
+
+
+            <label >
+                <input type="radio" name="size" value="2">
+                    2 x 4
+            </label>
+            <label >
+                <input type="radio" name="size" value="4">
+                    4 x 4
+            </label>
+            <label >
+                <input type="radio" name="size" value="6">
+                    6 x 4
+            </label>
+            
+        </div>
+        <div id="controls" style="display: none;">
+            <button id="Shuffle">Shuffle</button> 
+            <button id="Start">Start</button>
+
+        </div>
+        <div id="board">
+
+        </div>
+        <div id ="stats" style="display: none;">
+            <p>No. of clicks: <span id="clicks">0</span></p>
+            <p>No. of pairs: <span id="pairs">0</span></p>  
+        </div>
+        <div id="gameModal" class="modal" style="display: none;">
+            <div class="modal-content">
+        <h2 id="modalMessage"></h2>
+        <p id="modalEmojis"></p>
+        <button id="playAgain" type="button">Play again</button>
+            </div>
+        </div>
+    </div>
+    <script src="ba17.js"></script>
+</body>
+</html>
+
